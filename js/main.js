@@ -35,7 +35,7 @@ const content = document.getElementById('main-content');
 
 for ( let i=0; i<team.length ; i++){
     const newCard = document.createElement('div')
-    newCard.classList.add('col-4');
-    newCard.innerHTML = "<img src='img/"+team[i].image+"' class='img-fluid'> <p> Name : "+team[i].name+"</p> <p> Role : "+team[i].role+"</p>";
+    newCard.classList.add('col-4','mt-5');
+    newCard.innerHTML = "<img src='img/"+team[i].image+"' class='img-fluid'> <p class='mt-3 fs-4'>"+team[i].name+"</p> <p>"+team[i].role+"</p>";
     content.append(newCard);
 }
