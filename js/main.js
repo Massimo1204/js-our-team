@@ -39,7 +39,7 @@ const message = document.getElementById('alert');
 let newMembersCounter = 0;
 
 function displayMembers( team,content){
-    content.innerHTML='';
+    content.innerHTML = "<div class='col-12 py-4'><h1 class='text-uppercase fw-bold'>our team</h1></div>";
     for ( let i=0; i<team.length ; i++){
         const newCard = document.createElement('div')
         newCard.classList.add('col-4','mt-5');
